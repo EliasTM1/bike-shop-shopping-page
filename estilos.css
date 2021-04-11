@@ -1,0 +1,175 @@
+th {
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.borrar-curso {
+    background-color: red;
+    font-size: 1rem;
+    color: white;
+    display: block;
+    max-width: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.precio {
+    cursor: pointer;
+}
+
+.tabSty {
+    text-align: center;
+    font-size: 1rem;
+}
+
+#home {
+    background-image: url(./resources/simon-berger-twukN12EN7c-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#home>div {
+    font-family: 'Teko', sans-serif;
+    font-size: 8rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer {
+    background-color: black;
+    list-style: none;
+}
+
+#centrada {
+    margin: 50px auto 0px auto;
+    width: 300px;
+    font-family: 'Verdana';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.utopix {
+    padding-bottom: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #bababa 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #bababa));
+    /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #bababa 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #bababa 100%);
+    /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #bababa 100%);
+    /* IE10+ */
+    background: radial-gradient(ellipse at center, #ffffff 0%, #bababa 100%);
+    /* W3C */
+}
+
+.cube {
+    width: 30%;
+    height: 50px;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.default-state,
+.active-state {
+    height: 50px;
+}
+
+.cube+.cube {
+    margin: 10px 0px;
+}
+
+.default-state {
+    -webkit-transform: translateZ(25px);
+    -moz-transform: translateZ(25px);
+    -o-transform: translateZ(25px);
+    -ms-transform: translateZ(25px);
+    transform: translateZ(25px);
+}
+
+.flip-to-top .active-state {
+    -webkit-transform: rotateX(90deg) translateZ(75px);
+    -moz-transform: rotateX(90deg) translateZ(75px);
+    -o-transform: rotateX(90deg) translateZ(75px);
+    -ms-transform: rotateX(90deg) translateZ(75px);
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.flip-to-bottom .active-state {
+    -webkit-transform: rotateX(-90deg) translateZ(-50px);
+    -moz-transform: rotateX(-90deg) translateZ(-50px);
+    -o-transform: rotateX(-90deg) translateZ(-50px);
+    -ms-transform: rotateX(-90deg) translateZ(-50px);
+    transform: rotateX(-90deg) translateZ(-50px);
+}
+
+.cube.flip-to-top:hover {
+    -webkit-transform: rotateX(-89deg);
+    -moz-transform: rotateX(-89deg);
+    -o-transform: rotateX(-89deg);
+    -ms-transform: rotateX(-89deg);
+    transform: rotateX(-89deg);
+}
+
+.cube.flip-to-bottom:hover {
+    -webkit-transform: rotateX(89deg);
+    -moz-transform: rotateX(89deg);
+    -o-transform: rotateX(89deg);
+    -ms-transform: rotateX(89deg);
+    transform: rotateX(89deg);
+}
+
+.cube {
+    text-align: center;
+    margin: 20 auto;
+    cursor: pointer;
+}
+
+cube:active {
+    color: blue;
+}
+
+.default-state,
+.active-state {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 50px;
+    -webkit-transition: background 250ms ease;
+    -moz-transition: background 250ms ease;
+    -o-transition: background 250ms ease;
+    transition: background 250ms ease;
+}
+
+.cube:hover .default-state {
+    background: #000;
+}
+
+.trek {
+    background: #1DA1F2;
+}
